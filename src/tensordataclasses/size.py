@@ -1,4 +1,4 @@
-from typing import Type, NamedTuple, ClassVar, TypeVar, Union, Tuple
+from typing import Type, NamedTuple, ClassVar, TypeVar, Union, Tuple, Any
 
 import torch
 
@@ -12,7 +12,7 @@ def as_size(x: Union[torch.Size, Tuple[int]]) -> torch.Size:
     return torch.Size(x)
 
 
-class KeyedSize:
+class KeyedSize(Tuple[torch.Size]):
 
     _infotype: ClassVar[Type]
 
@@ -27,6 +27,13 @@ class KeyedSize:
 
     def numel(self):
         return self._infotype(*map(torch.Size.numel, self))
+
+    def __eq__(self, other: Any) -> bool:
+        if isinstance(other, torch.Size):
+            return all(size == other for size in self)
+        if isinstance(other, self.__class__):
+            return all(x == y for x, y in zip(self, other))
+        return NotImplemented
 
 
 def keyedsize(name: str, basetype: Type[BaseT]) -> Type[SizeT]:
