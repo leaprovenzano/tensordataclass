@@ -12,6 +12,6 @@ install:
 - pip install .
 script:
 - flake8
-- mypy src/tensordataclass
+- mypy src/tensordataclasses
 - pytest
 - make dist && twine check dist/*

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Top-level package for tensordataclass."""
+"""Top-level package for tensordataclasses."""
 
 __author__ = """Lea Provenzano"""
 __email__ = 'leaprovenzano@gmail.com'

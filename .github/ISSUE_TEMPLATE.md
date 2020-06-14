@@ -1,4 +1,4 @@
-* tensordataclass version:
+* tensordataclasses version:
 * Python version:
 * Operating System:
 

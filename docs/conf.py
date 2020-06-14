@@ -15,17 +15,17 @@ import sys
 
 sys.path.insert(0, os.path.abspath('../src'))
 
-import tensordataclass
+import tensordataclasses
 
 # -- Project information -----------------------------------------------------
 
-project = 'tensordataclass'
+project = 'tensordataclasses'
 copyright = "2020, Lea Provenzano"
-author = tensordataclass.__author__
+author = tensordataclasses.__author__
 
 
 # The full version, including alpha/beta/rc tags
-release = tensordataclass.__version__
+release = tensordataclasses.__version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -78,4 +78,3 @@ autodoc_default_flags = [
 ]
 
 master_doc = 'index'
-

@@ -51,16 +51,16 @@ clean-test: clean-pyc## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint: ## check style with flake8
-	flake8 src/tensordataclass tests
+	flake8 src/tensordataclasses tests
 
 test: ## run tests quickly with the default Python
-	py.test --cov src/tensordataclass
+	py.test --cov src/tensordataclasses
 
 test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source src/tensordataclass -m pytest
+	coverage run --source src/tensordataclasses -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html

@@ -1,4 +1,4 @@
-.. _issues: https://github.com/leaprovenzano/tensordataclass/issues
+.. _issues: https://github.com/leaprovenzano/tensordataclasses/issues
 
 ============
 Contributing
@@ -19,7 +19,7 @@ Report Bugs:
 Report bugs in our `issues`_. If you are reporting a bug, please include:
 
 * Your operating system name and version.
-* Any details about your local setup that might be helpful in troubleshooting. This must include your version of python and tensordataclass
+* Any details about your local setup that might be helpful in troubleshooting. This must include your version of python and tensordataclasses
 * A minimal example that will reproduce the bug.
 
 
@@ -48,15 +48,15 @@ If you've been assigned an issue and you'd like to get started here's how to go 
 Setting up for local development:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Fork the tensordataclass repo on GitHub.
+1. Fork the tensordataclasses repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/tensordataclass.git
+    $ git clone git@github.com:your_name_here/tensordataclasses.git
 
 3. Install your local copy into a virtualenv::
 
-    $ python3 -m tensordataclass/env
-    $ cd tensordataclass
+    $ python3 -m tensordataclasses/env
+    $ cd tensordataclasses
     $ source env/bin/activate
     $ pip install -e .
 

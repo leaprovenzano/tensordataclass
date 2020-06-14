@@ -5,7 +5,7 @@ include LICENSE
 include README.rst
 include requirements.txt
 
-include src/tensordataclass/py.typed
+include src/tensordataclasses/py.typed
 
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]

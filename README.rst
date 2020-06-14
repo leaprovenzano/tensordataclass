@@ -1,22 +1,22 @@
 ===============
-tensordataclass
+tensordataclasses
 ===============
 
 
-.. image:: https://img.shields.io/pypi/v/tensordataclass.svg
-    :target: https://pypi.python.org/pypi/tensordataclass
+.. image:: https://img.shields.io/pypi/v/tensordataclasses.svg
+    :target: https://pypi.python.org/pypi/tensordataclasses
     :alt: pypi version
 
-.. image:: https://img.shields.io/travis/leaprovenzano/tensordataclass.svg
-    :target: https://travis-ci.com/leaprovenzano/tensordataclass
+.. image:: https://img.shields.io/travis/leaprovenzano/tensordataclasses.svg
+    :target: https://travis-ci.com/leaprovenzano/tensordataclasses
     :alt: travis build
 
-.. image:: https://readthedocs.org/projects/tensordataclass/badge/?version=latest
-    :target: https://tensordataclass.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/tensordataclasses/badge/?version=latest
+    :target: https://tensordataclasses.readthedocs.io/en/latest/?badge=latest
     :alt: documentation status
 
-.. image:: https://codecov.io/gh/leaprovenzano/tensordataclass/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/leaprovenzano/tensordataclass
+.. image:: https://codecov.io/gh/leaprovenzano/tensordataclasses/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/leaprovenzano/tensordataclasses
     :alt: coverage
 
 .. image:: https://img.shields.io/badge/hypothesis-tested-brightgreen.svg
@@ -43,13 +43,13 @@ Getting Started:
 
 Install the latest stable version with pip::
 
-   $ pip install tensordataclass
+   $ pip install tensordataclasses
 
 
 **Checkout the docs**:
 
 It's best to checkout the `docs`_. There you'll find detailed
-documentation of tensordataclass}'s features and lots of examples of
+documentation of tensordataclasses}'s features and lots of examples of
 how to use them.
 
 What's is it?
@@ -62,4 +62,4 @@ Principles:
 
 * TODO
 
-.. _docs: https://tensordataclass.readthedocs.io
+.. _docs: https://tensordataclasses.readthedocs.io

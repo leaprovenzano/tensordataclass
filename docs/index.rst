@@ -1,9 +1,9 @@
-tensordataclass docs
+tensordataclasses docs
 ====================================
 
 .. include:: ../README.rst
 
-.. currentmodule:: tensordataclass
+.. currentmodule:: tensordataclasses
 
 
 .. toctree::
@@ -12,7 +12,7 @@ tensordataclass docs
 
 .. autosummary::
    :toctree: _autosummary
-   
+
 
 
 Indices and tables
