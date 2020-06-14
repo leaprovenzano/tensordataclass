@@ -1,4 +1,4 @@
-from typing import Type, NamedTuple, ClassVar, TypeVar
+from typing import Type, NamedTuple, ClassVar, TypeVar, Union, Tuple
 
 import torch
 
@@ -6,13 +6,23 @@ BaseT = TypeVar('BaseT', bound=NamedTuple)
 SizeT = TypeVar('SizeT', bound='KeyedSize')
 
 
+def as_size(x: Union[torch.Size, Tuple[int]]) -> torch.Size:
+    if isinstance(x, torch.Size):
+        return x
+    return torch.Size(x)
+
+
 class KeyedSize:
 
     _infotype: ClassVar[Type]
 
+    @classmethod
+    def from_keyedtensors(cls, *keyedtensors):
+        return cls.__new__(cls, **{k: v.shape for k, v in keyedtensors})
+
     def __new__(cls, *args, **kwargs):
         return super().__new__(
-            cls, *map(torch.Size, args), **{k: torch.Size(v) for k, v in kwargs.items()}
+            cls, *map(as_size, args), **{k: as_size(v) for k, v in kwargs.items()}
         )
 
     def numel(self):
